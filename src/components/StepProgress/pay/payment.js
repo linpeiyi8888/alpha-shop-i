@@ -1,6 +1,8 @@
 export default function Payment() {
   return (
     <>
+      <h2 className="register-title col col-12">結帳</h2>
+      <section className="progress-container col col-12">
         <span className="progress-group" data-phase="address">
           <span className="progress-icon">
             <span className="text">1</span>
@@ -21,6 +23,7 @@ export default function Payment() {
           </span>
           <span className="progress-label">付款資訊</span>
         </span>
+      </section>
     </>
   );
 }

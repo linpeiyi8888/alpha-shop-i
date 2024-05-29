@@ -1257,7 +1257,7 @@ section.button-group button.next > object {
 }
 section.cart-container {
   padding: 0px 24px;
-  margin-top: 166px;
+  margin-top: 100px;
   border: 1px solid #f0f0f5;
   border-radius: 8px;
 }
@@ -1553,4 +1553,11 @@ body[data-theme="dark"]
   color: #ffffff;
 }
 
+.minus {
+  cursor: pointer;
+}
+
+.plus {
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
