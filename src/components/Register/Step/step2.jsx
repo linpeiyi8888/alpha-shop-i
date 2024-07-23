@@ -1,4 +1,4 @@
-export default function Shipping() {
+export default function Step2() {
   return (
     <>
       <form className="col col-12" data-phase="shipping">

@@ -1,8 +1,7 @@
-import { createContext } from "react";
 import product1 from "/Users/linpeiyi/alpha-shop-i/src/img/product-1.jpg";
 import product2 from "/Users/linpeiyi/alpha-shop-i/src/img/product-2.jpg";
 
-export const Items = createContext([
+const Items = [
   {
     id: "1",
     name: "破壞補丁修身牛仔褲",
@@ -17,4 +16,6 @@ export const Items = createContext([
     price: 1299,
     quantity: 1,
   },
-]);
+];
+
+export { Items };

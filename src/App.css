@@ -646,7 +646,6 @@ main.site-main .main-container {
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 600px;
 }
 
 @media screen and (min-width: 749.5px) {
@@ -700,6 +699,7 @@ section.register-container[data-phase="2"]
   .icon {
   display: inline-block;
 }
+
 section.register-container[data-phase="3"]
   .progress-group[data-phase="shipping"]
   .progress-icon
@@ -712,7 +712,7 @@ section.register-container[data-phase="2"]
   .progress-group[data-phase="address"]
   .progress-icon
   .text {
-  display: none;
+  display: inline-flex; /* none改為inline-block */
 }
 
 section.register-container[data-phase="2"]
@@ -1257,7 +1257,7 @@ section.button-group button.next > object {
 }
 section.cart-container {
   padding: 0px 24px;
-  margin-top: 100px;
+  margin-top: 166px;
   border: 1px solid #f0f0f5;
   border-radius: 8px;
 }
@@ -1553,11 +1553,13 @@ body[data-theme="dark"]
   color: #ffffff;
 }
 
-.minus {
+/*# sourceMappingURL=main.css.map */
+
+.minus,
+.plus,
+.prev,
+.next {
   cursor: pointer;
 }
 
-.plus {
-  cursor: pointer;
-}
 /*# sourceMappingURL=main.css.map */
