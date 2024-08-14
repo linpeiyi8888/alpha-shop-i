@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { CartContext } from "./cartContent";
+
 import { ReactComponent as Minus } from "/Users/linpeiyi/alpha-shop-i/src/icons/minus.svg";
 import { ReactComponent as Plus } from "/Users/linpeiyi/alpha-shop-i/src/icons/plus.svg";
 
@@ -34,18 +37,15 @@ function Product(props) {
   );
 }
 
-export default function CartItem({
-  itemList,
-  onMinusClick,
-  onPlusClick,
-  totalPrice,
-}) {
+export default function CartItem({ onMinusClick, onPlusClick, totalPrice }) {
+  const ItemContext = useContext(CartContext);
+
   return (
     <section className="cart-container col col-lg-5 col-sm-12">
       <h3 className="cart-title">購物籃</h3>
 
       <section className="product-list col col-12" data-total-price="0">
-        {itemList.map((item) => (
+        {ItemContext.map((item) => (
           <Product
             key={item.id}
             {...item}
